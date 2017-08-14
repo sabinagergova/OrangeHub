@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!--form.html-->
+<html>
+	<head>
+		<title>XML/JSON convertor</title>
+		<link rel="stylesheet" type="text/css" href="cherry_style.css">
+	</head>
+	<body>
+		<h1>XML/JSON convertor</h1>
+		<form action="http://localhost:8080/converter/result" method="post">
+			<textarea name="form" rows = "20" required class = "textarea"></textarea>
+			<br>
+			<input type="submit" name="XML" value="convert to JSON" class="buttons">
+			<input type="submit" name="JSON" value="convert to XML" class="buttons">
+		</form>
+		<form action="http://localhost:8080/converter/result" method="get">
+			<input name="stat" type="submit" value="Get Statistics" class="buttons">
+		</form>
+	</body>
+</html>

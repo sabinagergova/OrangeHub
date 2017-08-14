@@ -1,0 +1,22 @@
+!contents 
+
+!define TEST_SYSTEM {slim}
+
+|import                           |
+|com.skrill.interns.SeleniumSabina|
+
+
+|script    |incomming outgoing constants|
+|$EMAIL=   |email builder;              |
+|$PASSWORD=|password builder;  |$EMAIL  |
+
+|script|fitnesse test scripts          |
+|ensure|register user;|$EMAIL|$PASSWORD|
+|reject|register user;|$EMAIL|alabala  |
+|reject|register user;|$EMAIL|         |
+|reject|register user;|      |$PASSWORD|
+|ensure|login;        |$EMAIL|$PASSWORD|
+|reject|login;        |$EMAIL|alabala  |
+|reject|login;        |$EMAIL|         |
+|reject|login;        |      |$PASSWORD|
+|closing browser;                      |

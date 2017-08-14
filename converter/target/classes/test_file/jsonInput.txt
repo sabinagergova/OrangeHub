@@ -1,0 +1,9 @@
+{
+	"firstName" : "Atanas",
+	"lastName" : "Dichev",
+	"address" : {
+		"country" : "Bulgaria",
+		"city" : "Sofia",
+		"zipCode" : 1000
+	}
+}

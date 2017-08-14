@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<!--read.html-->
+<html>
+	<head>
+		<title>Orange Hub - Read Messages</title>
+		<link rel="stylesheet" type="text/css" href="orange_style.css">
+	</head>
+	<body>
+		<h1>Your unread messages:</h1>
+		
+		<form action="http://localhost:5661/messagecenter" method="get">
+			<textarea cols = "50" rows = "13" readonly="readonly" id = "form">%s</textarea>
+			<input type="submit" value="Go back to message center" class ="buttons">
+		</form>
+	</body>
+</html>

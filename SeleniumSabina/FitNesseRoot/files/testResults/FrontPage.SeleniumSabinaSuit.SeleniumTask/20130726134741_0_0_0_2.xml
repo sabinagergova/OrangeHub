@@ -1,0 +1,336 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20130530</FitNesseVersion>
+  <rootPath>SeleniumTask</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>2</exceptions>
+    </counts>
+    <runTimeInMillis>45284</runTimeInMillis>
+    <content>&lt;div class="toc1"&gt;
+	&lt;div class="contents"&gt;
+		&lt;b&gt;Contents:&lt;/b&gt;
+		&lt;ul/&gt;&lt;ul/&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;com.skrill.interns.SeleniumSabina&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td colspan="3"&gt;&lt;span class="pass"&gt;fitnesse test&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;email&lt;/td&gt;
+		&lt;td&gt;password&lt;/td&gt;
+		&lt;td&gt;register user?&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;sabina.intern.test.fitnesse5@sun-fish.com&lt;/td&gt;
+		&lt;td class="error"&gt;sabina.intern.test.fitnesse5&lt;/td&gt;
+		&lt;td class="error"&gt;true&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="3"&gt;&lt;pre&gt;__EXCEPTION__:org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for visibility of element located by By.selector: .btn.logout-btn.btn-header-grey.hidden-mobile
+Build info: version: '2.33.0', revision: '4ecaf82108b2a6cc6f006aae81961236eba93358', time: '2013-05-22 12:00:17'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_45'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259) [selenium-support-2.33.0.jar]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) [selenium-support-2.33.0.jar]
+	at com.skrill.interns.SeleniumSabina.RegisterUser.register(RegisterUser.java:111) [file:/C:/Binny/WorkSpaceEclipse/team-orange/SeleniumSabina/target/classes/]
+	at com.skrill.interns.SeleniumSabina.FitnesseTest.registerUser(FitnesseTest.java:9) [file:/C:/Binny/WorkSpaceEclipse/team-orange/SeleniumSabina/target/classes/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.6.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-standalone.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:112) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:37) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:24) [fitnesse-standalone.jar]
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":".btn.logout-btn.btn-header-grey.hidden-mobile"}
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.33.0', revision: '4ecaf82108b2a6cc6f006aae81961236eba93358', time: '2013-05-22 12:00:17'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_45'
+Session ID: dec554ce-784e-4e13-a0db-f83334cb3b7b
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=21.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor9.newInstance(Unknown Source) [n/a]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.6.0_45]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.6.0_45]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:396) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:406) [selenium-api-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:522) [selenium-support-2.33.0.jar]
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:39) [selenium-support-2.33.0.jar]
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130) [selenium-support-2.33.0.jar]
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:126) [selenium-support-2.33.0.jar]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208) [selenium-support-2.33.0.jar]
+	at com.skrill.interns.SeleniumSabina.RegisterUser.register(RegisterUser.java:111) [file:/C:/Binny/WorkSpaceEclipse/team-orange/SeleniumSabina/target/classes/]
+	at com.skrill.interns.SeleniumSabina.FitnesseTest.registerUser(FitnesseTest.java:9) [file:/C:/Binny/WorkSpaceEclipse/team-orange/SeleniumSabina/target/classes/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.6.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-standalone.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:112) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:37) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:24) [fitnesse-standalone.jar]
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"css selector","selector":".btn.logout-btn.btn-header-grey.hidden-mobile"}
+Build info: version: '2.33.0', revision: '4ecaf82108b2a6cc6f006aae81961236eba93358', time: '2013-05-22 12:00:17'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_45'
+Driver info: driver.version: unknown
+	at &amp;lt;anonymous class&amp;gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/SABINA~1/AppData/Local/Temp/anonymous4643030230147081431webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8444) [n/a]
+	at &amp;lt;anonymous class&amp;gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/SABINA~1/AppData/Local/Temp/anonymous4643030230147081431webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8453) [n/a]
+	at &amp;lt;anonymous class&amp;gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/SABINA~1/AppData/Local/Temp/anonymous4643030230147081431webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10456) [n/a]
+	at &amp;lt;anonymous class&amp;gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/SABINA~1/AppData/Local/Temp/anonymous4643030230147081431webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10461) [n/a]
+	at &amp;lt;anonymous class&amp;gt;.DelayedCommand.prototype.execute/&amp;lt;(file:///C:/Users/SABINA~1/AppData/Local/Temp/anonymous4643030230147081431webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10401) [n/a]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;sabina.intern.test.fitnesse5@sun-fish.com&lt;/td&gt;
+		&lt;td class="error"&gt;sabina.intern.test.fitnesse5&lt;/td&gt;
+		&lt;td class="error"&gt;false&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="3"&gt;&lt;pre&gt;__EXCEPTION__:org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for visibility of element located by By.selector: .btn.logout-btn.btn-header-grey.hidden-mobile
+Build info: version: '2.33.0', revision: '4ecaf82108b2a6cc6f006aae81961236eba93358', time: '2013-05-22 12:00:17'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_45'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259) [selenium-support-2.33.0.jar]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228) [selenium-support-2.33.0.jar]
+	at com.skrill.interns.SeleniumSabina.RegisterUser.register(RegisterUser.java:111) [file:/C:/Binny/WorkSpaceEclipse/team-orange/SeleniumSabina/target/classes/]
+	at com.skrill.interns.SeleniumSabina.FitnesseTest.registerUser(FitnesseTest.java:9) [file:/C:/Binny/WorkSpaceEclipse/team-orange/SeleniumSabina/target/classes/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.6.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-standalone.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:112) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:37) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:24) [fitnesse-standalone.jar]
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":".btn.logout-btn.btn-header-grey.hidden-mobile"}
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.33.0', revision: '4ecaf82108b2a6cc6f006aae81961236eba93358', time: '2013-05-22 12:00:17'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_45'
+Session ID: dec554ce-784e-4e13-a0db-f83334cb3b7b
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=21.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.GeneratedConstructorAccessor9.newInstance(Unknown Source) [n/a]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.6.0_45]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.6.0_45]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:396) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:406) [selenium-api-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:522) [selenium-support-2.33.0.jar]
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:39) [selenium-support-2.33.0.jar]
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130) [selenium-support-2.33.0.jar]
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:126) [selenium-support-2.33.0.jar]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208) [selenium-support-2.33.0.jar]
+	at com.skrill.interns.SeleniumSabina.RegisterUser.register(RegisterUser.java:111) [file:/C:/Binny/WorkSpaceEclipse/team-orange/SeleniumSabina/target/classes/]
+	at com.skrill.interns.SeleniumSabina.FitnesseTest.registerUser(FitnesseTest.java:9) [file:/C:/Binny/WorkSpaceEclipse/team-orange/SeleniumSabina/target/classes/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.6.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-standalone.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:112) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:37) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:24) [fitnesse-standalone.jar]
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"css selector","selector":".btn.logout-btn.btn-header-grey.hidden-mobile"}
+Build info: version: '2.33.0', revision: '4ecaf82108b2a6cc6f006aae81961236eba93358', time: '2013-05-22 12:00:17'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_45'
+Driver info: driver.version: unknown
+	at &amp;lt;anonymous class&amp;gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/SABINA~1/AppData/Local/Temp/anonymous4643030230147081431webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8444) [n/a]
+	at &amp;lt;anonymous class&amp;gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/SABINA~1/AppData/Local/Temp/anonymous4643030230147081431webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8453) [n/a]
+	at &amp;lt;anonymous class&amp;gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/SABINA~1/AppData/Local/Temp/anonymous4643030230147081431webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10456) [n/a]
+	at &amp;lt;anonymous class&amp;gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/SABINA~1/AppData/Local/Temp/anonymous4643030230147081431webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10461) [n/a]
+	at &amp;lt;anonymous class&amp;gt;.DelayedCommand.prototype.execute/&amp;lt;(file:///C:/Users/SABINA~1/AppData/Local/Temp/anonymous4643030230147081431webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10401) [n/a]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>SeleniumTask</relativePageName>
+    
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='com.skrill.interns.SeleniumSabina'}</instruction>
+        <slimResult>pass(com.skrill.interns.SeleniumSabina)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>com.skrill.interns.SeleniumSabina</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_0', instruction='make', instanceName='decisionTable_1', className='FitnesseTest', args=[]}</instruction>
+        <slimResult>pass(fitnesse test)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>decisionTable_1_0</instructionId>
+                    <col>0</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>fitnesse test</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_4', instruction='call', instanceName='decisionTable_1', methodName='setEmail', args=[sabina.intern.test.fitnesse5@sun-fish.com]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_4</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_5', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[sabina.intern.test.fitnesse5]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_5</instructionId>
+                    <col>1</col>
+                              <row>2</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_7', instruction='call', instanceName='decisionTable_1', methodName='registerUser', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_1_7</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_9', instruction='call', instanceName='decisionTable_1', methodName='setEmail', args=[sabina.intern.test.fitnesse5@sun-fish.com]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_9</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_10', instruction='call', instanceName='decisionTable_1', methodName='setPassword', args=[sabina.intern.test.fitnesse5]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>decisionTable_1_10</instructionId>
+                    <col>1</col>
+                              <row>3</row>
+                    <type>VoidReturnExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='decisionTable_1_12', instruction='call', instanceName='decisionTable_1', methodName='registerUser', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>decisionTable_1_12</instructionId>
+                              <type>ReturnedValueExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+    <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>0</totalRunTimeInMillis>
+  
+</testResults>
+

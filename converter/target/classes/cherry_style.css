@@ -1,0 +1,44 @@
+body{
+	background-image:url('http://griggsortho.com/wp-content/uploads/2013/03/safe_Four_Cherries.jpg');
+	text-align:center;
+}
+h1{
+	text-align:center;
+	font-size: 200%;
+}
+form{
+	text-align:center;
+	width: 80%;
+	margin-top:2%;
+	margin-bottom:2%;
+	margin-right:5%;
+	margin-left:5%;
+}
+.textarea{
+	margin-top:5%;
+	width: 60%;
+	background: rgba(245,245,245,0.7);
+}
+.textarea{
+	margin-top:10%;
+	width: 25%;
+	background: rgba(245,245,245,0.7);
+}
+input.buttons{
+	border-style:solid;
+	border-width:1px;
+	display:inline - block;
+	color: #220066;
+	padding-top:2%;
+	padding-bottom:2%;
+	padding-right:2%;
+	padding-left:2%;
+	margin-top:2%;
+	margin-bottom:5%;
+	margin-right:5%;
+	margin-left:5%;
+	width: auto;
+	vertical-align: middle;
+	background: rgba(200,200,200,0.7);
+	display:inline - block;				
+}

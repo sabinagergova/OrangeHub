@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="35" started-at="2013-07-22T10:36:10Z" finished-at="2013-07-22T10:36:10Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="35" started-at="2013-07-22T10:36:10Z" finished-at="2013-07-22T10:36:10Z">
+      <class name="com.skrill.interns.converter.ContentTest">
+        <test-method status="PASS" signature="givenSomeStringWhenCallingGetStatisticsPageWithThisStringThenResultStringContainsFirstString()[pri:0, instance:com.skrill.interns.converter.ContentTest@a210b5b]" name="givenSomeStringWhenCallingGetStatisticsPageWithThisStringThenResultStringContainsFirstString" duration-ms="27" started-at="2013-07-22T13:36:10Z" finished-at="2013-07-22T13:36:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- givenSomeStringWhenCallingGetStatisticsPageWithThisStringThenResultStringContainsFirstString -->
+      </class> <!-- com.skrill.interns.converter.ContentTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

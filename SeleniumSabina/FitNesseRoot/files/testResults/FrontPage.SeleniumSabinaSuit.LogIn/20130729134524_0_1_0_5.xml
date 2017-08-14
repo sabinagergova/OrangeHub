@@ -1,0 +1,714 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20130530</FitNesseVersion>
+  <rootPath>LogIn</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>5</exceptions>
+    </counts>
+    <runTimeInMillis>20990</runTimeInMillis>
+    <content>&lt;div class="toc1"&gt;
+	&lt;div class="contents"&gt;
+		&lt;b&gt;Contents:&lt;/b&gt;
+		&lt;ul/&gt;&lt;ul/&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;com.skrill.interns.SeleniumSabina&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="2"&gt;&lt;span class="pass"&gt;incomming outgoing constants&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$EMAIL&amp;lt;-[sabina.intern.test.selenium1.7398@sun-fish.com]&lt;/td&gt;
+		&lt;td colspan="2"&gt;email builder;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;$PASSWORD&amp;lt;-[sabina.intern.test.selenium1.7398]&lt;/td&gt;
+		&lt;td&gt;password builder;&lt;/td&gt;
+		&lt;td&gt;$EMAIL-&gt;[sabina.intern.test.selenium1.7398@sun-fish.com]&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td colspan="3"&gt;&lt;span class="pass"&gt;register user&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;span class="fail"&gt;ensure&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;register;&lt;/td&gt;
+		&lt;td&gt;$EMAIL-&gt;[sabina.intern.test.selenium1.7398@sun-fish.com]&lt;/td&gt;
+		&lt;td&gt;$PASSWORD-&gt;[sabina.intern.test.selenium1.7398]&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td colspan="4"&gt;closing browser;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;reject&lt;/td&gt;
+		&lt;td class="error"&gt;register;&lt;/td&gt;
+		&lt;td class="error"&gt;$EMAIL-&gt;[sabina.intern.test.selenium1.7398@sun-fish.com]&lt;/td&gt;
+		&lt;td class="error"&gt;alabala&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;pre&gt;__EXCEPTION__:org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Command duration or timeout: 136 milliseconds
+Build info: version: '2.33.0', revision: '4ecaf82108b2a6cc6f006aae81961236eba93358', time: '2013-05-22 12:00:17'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_45'
+Session ID: 1def9452-24e8-4f5e-bf4b-75adb7eac8ce
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=21.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) [rt.jar:1.6.0_45]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.6.0_45]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) [rt.jar:1.6.0_45]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) [rt.jar:1.6.0_45]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276) [selenium-remote-driver-2.33.0.jar]
+	at com.skrill.interns.SeleniumSabina.RegisterUser.register(RegisterUser.java:30) [file:/C:/Binny/WorkSpaceEclipse/team-orange/SeleniumSabina/target/classes/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.6.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-standalone.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:112) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:37) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:24) [fitnesse-standalone.jar]
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Window not found. The browser window may have been closed.
+Build info: version: '2.33.0', revision: '4ecaf82108b2a6cc6f006aae81961236eba93358', time: '2013-05-22 12:00:17'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_45'
+Driver info: driver.version: unknown
+	at &amp;lt;anonymous class&amp;gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/SABINA~1/AppData/Local/Temp/anonymous6227305330859160100webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10526) [n/a]
+	at &amp;lt;anonymous class&amp;gt;.Dispatcher.executeAs/&amp;lt;(file:///C:/Users/SABINA~1/AppData/Local/Temp/anonymous6227305330859160100webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7510) [n/a]
+	at &amp;lt;anonymous class&amp;gt;.Resource.prototype.handle(file:///C:/Users/SABINA~1/AppData/Local/Temp/anonymous6227305330859160100webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7668) [n/a]
+	at &amp;lt;anonymous class&amp;gt;.Dispatcher.prototype.dispatch(file:///C:/Users/SABINA~1/AppData/Local/Temp/anonymous6227305330859160100webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:7615) [n/a]
+	at &amp;lt;anonymous class&amp;gt;.WebDriverServer/&amp;lt;.handle(file:///C:/Users/SABINA~1/AppData/Local/Temp/anonymous6227305330859160100webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:10336) [n/a]
+	at &amp;lt;anonymous class&amp;gt;.&amp;lt;anonymous method&amp;gt;(file:///C:/Users/SABINA~1/AppData/Local/Temp/anonymous6227305330859160100webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1935) [n/a]
+	at &amp;lt;anonymous class&amp;gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/SABINA~1/AppData/Local/Temp/anonymous6227305330859160100webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2261) [n/a]
+	at &amp;lt;anonymous class&amp;gt;.Connection.prototype.process(file:///C:/Users/SABINA~1/AppData/Local/Temp/anonymous6227305330859160100webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1168) [n/a]
+	at &amp;lt;anonymous class&amp;gt;.RequestReader.prototype._handleResponse(file:///C:/Users/SABINA~1/AppData/Local/Temp/anonymous6227305330859160100webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1616) [n/a]
+	at &amp;lt;anonymous class&amp;gt;.RequestReader.prototype._processBody(file:///C:/Users/SABINA~1/AppData/Local/Temp/anonymous6227305330859160100webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1464) [n/a]
+	at &amp;lt;anonymous class&amp;gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/SABINA~1/AppData/Local/Temp/anonymous6227305330859160100webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1333) [n/a]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;ensure&lt;/td&gt;
+		&lt;td class="error"&gt;login;&lt;/td&gt;
+		&lt;td class="error"&gt;$EMAIL-&gt;[sabina.intern.test.selenium1.7398@sun-fish.com]&lt;/td&gt;
+		&lt;td class="error"&gt;$PASSWORD-&gt;[sabina.intern.test.selenium1.7398]&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;pre&gt;__EXCEPTION__:org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.33.0', revision: '4ecaf82108b2a6cc6f006aae81961236eba93358', time: '2013-05-22 12:00:17'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_45'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276) [selenium-remote-driver-2.33.0.jar]
+	at com.skrill.interns.SeleniumSabina.RegisterUser.login(RegisterUser.java:109) [file:/C:/Binny/WorkSpaceEclipse/team-orange/SeleniumSabina/target/classes/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.6.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-standalone.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:112) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:37) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:24) [fitnesse-standalone.jar]
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source) [rt.jar:1.6.0_45]
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:166) [httpcore-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:90) [httpcore-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:281) [httpcore-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:92) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:62) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:254) [httpcore-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:289) [httpcore-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:252) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:219) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:300) [httpcore-4.2.1.jar:4.2.1]
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:127) [httpcore-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:712) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:517) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906) [httpclient-4.2.1.jar:4.2.1]
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:316) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:295) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:133) [selenium-firefox-driver-2.33.0.jar]
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:355) [selenium-firefox-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276) [selenium-remote-driver-2.33.0.jar]
+	at com.skrill.interns.SeleniumSabina.RegisterUser.login(RegisterUser.java:109) [file:/C:/Binny/WorkSpaceEclipse/team-orange/SeleniumSabina/target/classes/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.6.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-standalone.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:112) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:37) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:24) [fitnesse-standalone.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td colspan="4" class="error"&gt;closing browser;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;pre&gt;__EXCEPTION__:org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.33.0', revision: '4ecaf82108b2a6cc6f006aae81961236eba93358', time: '2013-05-22 12:00:17'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_45'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:418) [selenium-remote-driver-2.33.0.jar]
+	at com.skrill.interns.SeleniumSabina.RegisterUser.closingBrowser(RegisterUser.java:162) [file:/C:/Binny/WorkSpaceEclipse/team-orange/SeleniumSabina/target/classes/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.6.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-standalone.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:112) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:37) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:24) [fitnesse-standalone.jar]
+Caused by: org.apache.http.conn.HttpHostConnectException: Connection to http://127.0.0.1:7055 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:190) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:640) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906) [httpclient-4.2.1.jar:4.2.1]
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:316) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:295) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:133) [selenium-firefox-driver-2.33.0.jar]
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:355) [selenium-firefox-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:418) [selenium-remote-driver-2.33.0.jar]
+	at com.skrill.interns.SeleniumSabina.RegisterUser.closingBrowser(RegisterUser.java:162) [file:/C:/Binny/WorkSpaceEclipse/team-orange/SeleniumSabina/target/classes/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.6.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-standalone.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:112) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:37) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:24) [fitnesse-standalone.jar]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method) [rt.jar:1.6.0_45]
+	at java.net.PlainSocketImpl.doConnect(Unknown Source) [rt.jar:1.6.0_45]
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source) [rt.jar:1.6.0_45]
+	at java.net.PlainSocketImpl.connect(Unknown Source) [rt.jar:1.6.0_45]
+	at java.net.SocksSocketImpl.connect(Unknown Source) [rt.jar:1.6.0_45]
+	at java.net.Socket.connect(Unknown Source) [rt.jar:1.6.0_45]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:127) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:640) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906) [httpclient-4.2.1.jar:4.2.1]
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:316) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:295) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:133) [selenium-firefox-driver-2.33.0.jar]
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:355) [selenium-firefox-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:418) [selenium-remote-driver-2.33.0.jar]
+	at com.skrill.interns.SeleniumSabina.RegisterUser.closingBrowser(RegisterUser.java:162) [file:/C:/Binny/WorkSpaceEclipse/team-orange/SeleniumSabina/target/classes/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.6.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-standalone.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:112) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:37) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:24) [fitnesse-standalone.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="error"&gt;reject&lt;/td&gt;
+		&lt;td class="error"&gt;login;&lt;/td&gt;
+		&lt;td class="error"&gt;$EMAIL-&gt;[sabina.intern.test.selenium1.7398@sun-fish.com]&lt;/td&gt;
+		&lt;td class="error"&gt;alabala&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;pre&gt;__EXCEPTION__:org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.33.0', revision: '4ecaf82108b2a6cc6f006aae81961236eba93358', time: '2013-05-22 12:00:17'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_45'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276) [selenium-remote-driver-2.33.0.jar]
+	at com.skrill.interns.SeleniumSabina.RegisterUser.login(RegisterUser.java:109) [file:/C:/Binny/WorkSpaceEclipse/team-orange/SeleniumSabina/target/classes/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.6.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-standalone.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:112) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:37) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:24) [fitnesse-standalone.jar]
+Caused by: org.apache.http.conn.HttpHostConnectException: Connection to http://127.0.0.1:7055 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:190) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:640) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906) [httpclient-4.2.1.jar:4.2.1]
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:316) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:295) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:133) [selenium-firefox-driver-2.33.0.jar]
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:355) [selenium-firefox-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276) [selenium-remote-driver-2.33.0.jar]
+	at com.skrill.interns.SeleniumSabina.RegisterUser.login(RegisterUser.java:109) [file:/C:/Binny/WorkSpaceEclipse/team-orange/SeleniumSabina/target/classes/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.6.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-standalone.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:112) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:37) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:24) [fitnesse-standalone.jar]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method) [rt.jar:1.6.0_45]
+	at java.net.PlainSocketImpl.doConnect(Unknown Source) [rt.jar:1.6.0_45]
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source) [rt.jar:1.6.0_45]
+	at java.net.PlainSocketImpl.connect(Unknown Source) [rt.jar:1.6.0_45]
+	at java.net.SocksSocketImpl.connect(Unknown Source) [rt.jar:1.6.0_45]
+	at java.net.Socket.connect(Unknown Source) [rt.jar:1.6.0_45]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:127) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:640) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906) [httpclient-4.2.1.jar:4.2.1]
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:316) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:295) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:133) [selenium-firefox-driver-2.33.0.jar]
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:355) [selenium-firefox-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276) [selenium-remote-driver-2.33.0.jar]
+	at com.skrill.interns.SeleniumSabina.RegisterUser.login(RegisterUser.java:109) [file:/C:/Binny/WorkSpaceEclipse/team-orange/SeleniumSabina/target/classes/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.6.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-standalone.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:112) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:37) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:24) [fitnesse-standalone.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td colspan="4" class="error"&gt;closing browser;&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="4"&gt;&lt;pre&gt;__EXCEPTION__:org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.33.0', revision: '4ecaf82108b2a6cc6f006aae81961236eba93358', time: '2013-05-22 12:00:17'
+System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.6.0_45'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:418) [selenium-remote-driver-2.33.0.jar]
+	at com.skrill.interns.SeleniumSabina.RegisterUser.closingBrowser(RegisterUser.java:162) [file:/C:/Binny/WorkSpaceEclipse/team-orange/SeleniumSabina/target/classes/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.6.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-standalone.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:112) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:37) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:24) [fitnesse-standalone.jar]
+Caused by: org.apache.http.conn.HttpHostConnectException: Connection to http://127.0.0.1:7055 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:190) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:640) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906) [httpclient-4.2.1.jar:4.2.1]
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:316) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:295) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:133) [selenium-firefox-driver-2.33.0.jar]
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:355) [selenium-firefox-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:418) [selenium-remote-driver-2.33.0.jar]
+	at com.skrill.interns.SeleniumSabina.RegisterUser.closingBrowser(RegisterUser.java:162) [file:/C:/Binny/WorkSpaceEclipse/team-orange/SeleniumSabina/target/classes/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.6.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-standalone.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:112) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:37) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:24) [fitnesse-standalone.jar]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method) [rt.jar:1.6.0_45]
+	at java.net.PlainSocketImpl.doConnect(Unknown Source) [rt.jar:1.6.0_45]
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source) [rt.jar:1.6.0_45]
+	at java.net.PlainSocketImpl.connect(Unknown Source) [rt.jar:1.6.0_45]
+	at java.net.SocksSocketImpl.connect(Unknown Source) [rt.jar:1.6.0_45]
+	at java.net.Socket.connect(Unknown Source) [rt.jar:1.6.0_45]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:127) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:640) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479) [httpclient-4.2.1.jar:4.2.1]
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906) [httpclient-4.2.1.jar:4.2.1]
+	at org.openqa.selenium.remote.HttpCommandExecutor.fallBackExecute(HttpCommandExecutor.java:316) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:295) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:133) [selenium-firefox-driver-2.33.0.jar]
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:355) [selenium-firefox-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569) [selenium-remote-driver-2.33.0.jar]
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:418) [selenium-remote-driver-2.33.0.jar]
+	at com.skrill.interns.SeleniumSabina.RegisterUser.closingBrowser(RegisterUser.java:162) [file:/C:/Binny/WorkSpaceEclipse/team-orange/SeleniumSabina/target/classes/]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.6.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at java.lang.reflect.Method.invoke(Unknown Source) [rt.jar:1.6.0_45]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:16) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:43) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:52) [fitnesse-standalone.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:120) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:98) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:30) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:50) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:44) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:84) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:107) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processTheInstructions(SlimServer.java:94) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:68) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:54) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:40) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:112) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:37) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:24) [fitnesse-standalone.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>LogIn</relativePageName>
+    
+    
+    
+    <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='com.skrill.interns.SeleniumSabina'}</instruction>
+        <slimResult>pass(com.skrill.interns.SeleniumSabina)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>com.skrill.interns.SeleniumSabina</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_0', instruction='make', instanceName='scriptTableActor', className='IncommingOutgoingConstants', args=[]}</instruction>
+        <slimResult>pass(incomming outgoing constants)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_1_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>incomming outgoing constants</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_1', instruction='callAndAssign', symbolName='EMAIL', instanceName='scriptTableActor', methodName='emailBuilder', args=[]}</instruction>
+        <slimResult>$EMAIL&lt;-[sabina.intern.test.selenium1.7398@sun-fish.com]</slimResult>
+                <expectation>
+                    <instructionId>scriptTable_1_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>SymbolAssignmentExpectation</type>
+                                        <evaluationMessage>$EMAIL&lt;-[sabina.intern.test.selenium1.7398@sun-fish.com]</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_2', instruction='callAndAssign', symbolName='PASSWORD', instanceName='scriptTableActor', methodName='passwordBuilder', args=[$EMAIL]}</instruction>
+        <slimResult>$PASSWORD&lt;-[sabina.intern.test.selenium1.7398]</slimResult>
+                <expectation>
+                    <instructionId>scriptTable_1_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>SymbolAssignmentExpectation</type>
+                                        <evaluationMessage>$PASSWORD&lt;-[sabina.intern.test.selenium1.7398]</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_0', instruction='make', instanceName='scriptTableActor', className='RegisterUser', args=[]}</instruction>
+        <slimResult>pass(register user)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_2_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>register user</evaluationMessage>
+                  </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_1', instruction='call', instanceName='scriptTableActor', methodName='register', args=[$EMAIL, $PASSWORD]}</instruction>
+        <slimResult>fail()</slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_2_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>EnsureActionExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_2', instruction='call', instanceName='scriptTableActor', methodName='closingBrowser', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_2_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_3', instruction='call', instanceName='scriptTableActor', methodName='register', args=[$EMAIL, alabala]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_2_3</instructionId>
+                              <type>RejectActionExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_4', instruction='call', instanceName='scriptTableActor', methodName='login', args=[$EMAIL, $PASSWORD]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_2_4</instructionId>
+                              <type>EnsureActionExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_5', instruction='call', instanceName='scriptTableActor', methodName='closingBrowser', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_2_5</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_6', instruction='call', instanceName='scriptTableActor', methodName='login', args=[$EMAIL, alabala]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_2_6</instructionId>
+                              <type>RejectActionExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_7', instruction='call', instanceName='scriptTableActor', methodName='closingBrowser', args=[]}</instruction>
+        <slimResult>null</slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_2_7</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                      </expectation>
+        
+      </instructionResult>
+      
+    </instructions>
+    
+  </result>
+  
+    <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>0</totalRunTimeInMillis>
+  
+</testResults>
+

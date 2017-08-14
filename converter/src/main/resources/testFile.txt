@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<businessCard>
+  <firstName>John</firstName>
+  <lastName>Smith </lastName>
+  <profession>Teacher </profession>
+  <address>
+	<zipCode>4000 </zipCode>
+    <city>4000 Stavanger</city>
+    <country>Norway</country>
+  </address>
+</businessCard>

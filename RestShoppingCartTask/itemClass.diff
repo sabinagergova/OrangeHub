@@ -1,0 +1,45 @@
+diff -r 1cea1f38c55e RestShoppingCartTask/ShoppingCartApi/src/main/java/com/skrill/interns/shoppingCartApi/Item.java
+--- a/RestShoppingCartTask/ShoppingCartApi/src/main/java/com/skrill/interns/shoppingCartApi/Item.java	Thu Aug 01 12:28:12 2013 +0300
++++ b/RestShoppingCartTask/ShoppingCartApi/src/main/java/com/skrill/interns/shoppingCartApi/Item.java	Thu Aug 01 14:21:28 2013 +0300
+@@ -1,5 +1,41 @@
+ package com.skrill.interns.shoppingCartApi;
+ 
++import javax.xml.bind.annotation.XmlAccessType;
++import javax.xml.bind.annotation.XmlAccessorType;
++import javax.xml.bind.annotation.XmlElement;
++import javax.xml.bind.annotation.XmlRootElement;
++
++@XmlRootElement
++@XmlAccessorType(XmlAccessType.PROPERTY)
+ public class Item {
++	private String name;
++	private Integer quantity;
++
++	public Item() {
++	}
++
++	public Item(String name, Integer quantity) {
++		this.name = name;
++		this.quantity = quantity;
++	}
++
++	@XmlElement(nillable = true, required = false)
++	public String getName() {
++		return name;
++	}
++
++	public void setName(String name) {
++		this.name = name;
++
++	}
++
++	@XmlElement(nillable = true, required = false)
++	public Integer getQuantity() {
++		return quantity;
++	}
++
++	public void setQuantity(Integer quantity) {
++		this.quantity = quantity;
++	}
+ 
+ }

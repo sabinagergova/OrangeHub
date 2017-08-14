@@ -1,0 +1,15 @@
+!contents
+!define TEST_SYSTEM {slim}
+
+|import                     |
+|com.skrill.interns.selenium|
+
+
+|script    |fitnesse script coordinator  |
+|$EMAIL=   |generate random email        |
+|$PASSWORD=|generate password            |
+|ensure    |register a user;|$EMAIL|$PASSWORD              |
+|ensure    |log out user                 |
+|reject    |log in user;|$EMAIL|abcd1234 |
+|ensure    |log in user;|$EMAIL|$PASSWORD|
+|ensure | close driver|

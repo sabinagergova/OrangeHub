@@ -1,0 +1,382 @@
+diff -r 2544886677c0 SeleniumSabina/FitNesseRoot/FrontPage/SeleniumSabinaSuit/LogIn/content.txt
+--- /dev/null	Thu Jan 01 00:00:00 1970 +0000
++++ b/SeleniumSabina/FitNesseRoot/FrontPage/SeleniumSabinaSuit/LogIn/content.txt	Fri Jul 26 17:05:58 2013 +0300
+@@ -0,0 +1,22 @@
++!contents 
++
++!define TEST_SYSTEM {slim}
++
++|import                           |
++|com.skrill.interns.SeleniumSabina|
++
++|script    |incomming outgoing constants|
++|$EMAIL=   |email builder;              |
++|$PASSWORD=|password builder;  |$EMAIL  |
++
++!|fitnesse test                 |
++|email |password |register user?|
++|$EMAIL|$PASSWORD|true          |
++|$EMAIL|$PASSWORD|false         |
++
++!|log in                |
++|email |password |login?|
++|$EMAIL|$PASSWORD|true  |
++
++|script|fitnesse test|
++|closing browser;    |
+\ No newline at end of file
+diff -r 2544886677c0 SeleniumSabina/pom.xml
+--- a/SeleniumSabina/pom.xml	Thu Jul 25 12:12:24 2013 +0300
++++ b/SeleniumSabina/pom.xml	Fri Jul 26 17:05:58 2013 +0300
+@@ -1,42 +1,74 @@
+ <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+-    <modelVersion>4.0.0</modelVersion>
++	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++	<modelVersion>4.0.0</modelVersion>
+ 
+-    <groupId>com.skrill.interns</groupId>
+-    <artifactId>SeleniumSabina</artifactId>
+-    <version>0.0.1-SNAPSHOT</version>
+-    <packaging>jar</packaging>
++	<groupId>com.skrill.interns</groupId>
++	<artifactId>SeleniumSabina</artifactId>
++	<version>0.0.1-SNAPSHOT</version>
++	<packaging>jar</packaging>
+ 
+-    <name>SeleniumSabina</name>
+-    <url>http://maven.apache.org</url>
++	<name>SeleniumSabina</name>
++	<url>http://maven.apache.org</url>
+ 
+-    <properties>
+-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+-    </properties>
++	<properties>
++		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
++	</properties>
+ 
+-    <dependencies>
+-        <dependency>
+-            <groupId>junit</groupId>
+-            <artifactId>junit</artifactId>
+-            <version>3.8.1</version>
+-            <scope>test</scope>
+-        </dependency>
+-        <dependency>
+-            <groupId>org.seleniumhq.selenium</groupId>
+-            <artifactId>selenium-java</artifactId>
+-            <version>2.33.0</version>
+-        </dependency>
+-        <distributionManagement>
+-            <repository>
+-                <id>internal.releases</id>
+-                <url>http://repo.dev.moneybookers.net/libs-releases-local</url>
+-                <uniqueVersion>false</uniqueVersion>
+-            </repository>
+-            <snapshotRepository>
+-                <id>internal.snapshots</id>
+-                <url>http://repo.dev.moneybookers.net/libs-snapshots-local</url>
+-                <uniqueVersion>false</uniqueVersion>
+-            </snapshotRepository>
+-        </distributionManagement>
+-    </dependencies>
++	<dependencies>
++		<dependency>
++			<groupId>junit</groupId>
++			<artifactId>junit</artifactId>
++			<version>3.8.1</version>
++			<scope>test</scope>
++		</dependency>
++		<dependency>
++			<groupId>org.seleniumhq.selenium</groupId>
++			<artifactId>selenium-java</artifactId>
++			<version>2.33.0</version>
++		</dependency>
++	</dependencies>
++	<distributionManagement>
++		<repository>
++			<id>internal.releases</id>
++			<url>http://repo.dev.moneybookers.net/libs-releases-local</url>
++			<uniqueVersion>false</uniqueVersion>
++		</repository>
++		<snapshotRepository>
++			<id>internal.snapshots</id>
++			<url>http://repo.dev.moneybookers.net/libs-snapshots-local</url>
++			<uniqueVersion>false</uniqueVersion>
++		</snapshotRepository>
++	</distributionManagement>
++	<build>
++		<plugins>
++			<plugin>
++				<groupId>org.apache.maven.plugins</groupId>
++				<artifactId>maven-compiler-plugin</artifactId>
++				<version>2.3.2</version>
++				<configuration>
++					<encoding>utf8</encoding>
++					<source>1.6</source>
++					<target>1.6</target>
++				</configuration>
++			</plugin>
++			<plugin>
++				<groupId>com.valtech.source.maven</groupId>
++				<artifactId>maven-fitnesse-cpgen-plugin</artifactId>
++				<version>1.0</version>
++				<configuration>
++					<fitnesseRoot>${basedir}/FitNesseRoot</fitnesseRoot>
++				</configuration>
++				<executions>
++					<execution>
++						<phase>install</phase>
++						<goals>
++							<goal>gencp</goal>
++						</goals>
++					</execution>
++				</executions>
++			</plugin>
++		</plugins>
++	</build>
++
++
+ </project>
+diff -r 2544886677c0 SeleniumSabina/src/main/java/com/skrill/interns/SeleniumSabina/FitnesseTest.java
+--- /dev/null	Thu Jan 01 00:00:00 1970 +0000
++++ b/SeleniumSabina/src/main/java/com/skrill/interns/SeleniumSabina/FitnesseTest.java	Fri Jul 26 17:05:58 2013 +0300
+@@ -0,0 +1,25 @@
++package com.skrill.interns.SeleniumSabina;
++
++public class FitnesseTest {
++
++	public String email;
++	public String password;
++
++	public boolean registerUser() {
++		RegisterUser.register(email, password);
++		return RegisterUser.logout();
++	}
++
++	public void closingBrowser() {
++		RegisterUser.closingBrowser();
++	}
++
++	public void setEmail(String email) {
++		this.email = email;
++	}
++
++	public void setPassword(String password) {
++		this.password = password;
++	}
++
++}
+diff -r 2544886677c0 SeleniumSabina/src/main/java/com/skrill/interns/SeleniumSabina/IncommingOutgoingConstants.java
+--- a/SeleniumSabina/src/main/java/com/skrill/interns/SeleniumSabina/IncommingOutgoingConstants.java	Thu Jul 25 12:12:24 2013 +0300
++++ b/SeleniumSabina/src/main/java/com/skrill/interns/SeleniumSabina/IncommingOutgoingConstants.java	Fri Jul 26 17:05:58 2013 +0300
+@@ -50,7 +50,7 @@
+ 	public static final int LENGTH = 4;
+ 	public static final String POSIBLE_RANDOM_VALUES = "1234567890";
+ 
+-	static String emailBuilder() {
++	public static StringBuilder emailBuilder() {
+ 		StringBuilder randomString = new StringBuilder();
+ 		emailBuilder.append("sabina.intern.test.selenium1.");
+ 		for (int i = 0; i < LENGTH; i++) {
+@@ -61,7 +61,13 @@
+ 		}
+ 		emailBuilder.append(randomString);
+ 		emailBuilder.append("@sun-fish.com");
+-		return emailBuilder.toString();
++		return emailBuilder;
+ 	}
+ 
++	public static String passwordBuilder(StringBuilder email) {
++		int endOfUserName = email.indexOf("@");
++		String password = email.substring(0, endOfUserName);
++		return password;
++
++	}
+ }
+\ No newline at end of file
+diff -r 2544886677c0 SeleniumSabina/src/main/java/com/skrill/interns/SeleniumSabina/LogIn.java
+--- /dev/null	Thu Jan 01 00:00:00 1970 +0000
++++ b/SeleniumSabina/src/main/java/com/skrill/interns/SeleniumSabina/LogIn.java	Fri Jul 26 17:05:58 2013 +0300
+@@ -0,0 +1,25 @@
++package com.skrill.interns.SeleniumSabina;
++
++public class LogIn {
++
++	public String email;
++	public String password;
++
++	public boolean login() {
++		RegisterUser.login(email, password);
++		return RegisterUser.logout();
++	}
++
++	public void closingBrowser() {
++		RegisterUser.closingBrowser();
++	}
++
++	public void setEmail(String email) {
++		this.email = email;
++	}
++
++	public void setPassword(String password) {
++		this.password = password;
++	}
++
++}
+diff -r 2544886677c0 SeleniumSabina/src/main/java/com/skrill/interns/SeleniumSabina/RegisterUser.java
+--- a/SeleniumSabina/src/main/java/com/skrill/interns/SeleniumSabina/RegisterUser.java	Thu Jul 25 12:12:24 2013 +0300
++++ b/SeleniumSabina/src/main/java/com/skrill/interns/SeleniumSabina/RegisterUser.java	Fri Jul 26 17:05:58 2013 +0300
+@@ -8,6 +8,7 @@
+ 
+ import org.openqa.selenium.By;
+ import org.openqa.selenium.Keys;
++import org.openqa.selenium.TimeoutException;
+ import org.openqa.selenium.WebDriver;
+ import org.openqa.selenium.WebElement;
+ import org.openqa.selenium.firefox.FirefoxDriver;
+@@ -19,11 +20,12 @@
+ public class RegisterUser {
+ 
+ 	static WebElement webElement;
+-	// static WebDriver driver = new FirefoxDriver();
+-	static RemoteWebDriver driver;
+-	static WebDriverWait timeOut;
++	static WebDriver driver = new FirefoxDriver();
++	// static RemoteWebDriver driver;
++	static WebDriverWait timeOut = new WebDriverWait(driver, 10);
++	static List<WebElement> variable = new ArrayList<WebElement>();
+ 
+-	public static void register(String email) {
++	public static void register(String email, String password) {
+ 
+ 		driver.get(IncommingOutgoingConstants.SIGNUP_URL);
+ 
+@@ -92,12 +94,12 @@
+ 
+ 		webElement = driver.findElement(By
+ 				.cssSelector(IncommingOutgoingConstants.REGISTRATION_PASSWORD));
+-		webElement.sendKeys(IncommingOutgoingConstants.INPUT_PASSWORD);
++		webElement.sendKeys(password);
+ 
+ 		webElement = driver
+ 				.findElement(By
+ 						.cssSelector(IncommingOutgoingConstants.CONFIRM_REGISTRATION_PASSWORD));
+-		webElement.sendKeys(IncommingOutgoingConstants.INPUT_PASSWORD);
++		webElement.sendKeys(password);
+ 
+ 		webElement = driver.findElement(By
+ 				.cssSelector(IncommingOutgoingConstants.HUMAN_TEST));
+@@ -106,9 +108,12 @@
+ 		webElement = driver.findElement(By
+ 				.cssSelector(IncommingOutgoingConstants.BUTTON_CREATE_ACCOUNT));
+ 		webElement.click();
++
++		// return isRegisteredSuccessful();
++
+ 	}
+ 
+-	public static void login(String email) {
++	public static void login(String email, String password) {
+ 		driver.get(IncommingOutgoingConstants.LOGIN_URL);
+ 
+ 		timeOut.until(ExpectedConditions.visibilityOfElementLocated(By
+@@ -120,7 +125,10 @@
+ 
+ 		webElement = driver.findElement(By
+ 				.cssSelector(IncommingOutgoingConstants.LOGIN_PASSWORD));
+-		webElement.sendKeys(IncommingOutgoingConstants.INPUT_PASSWORD);
++		webElement.sendKeys(password);
++
++		timeOut.until(ExpectedConditions.visibilityOfElementLocated(By
++				.cssSelector(IncommingOutgoingConstants.BUTTON_LOGIN)));
+ 
+ 		webElement = driver.findElement(By
+ 				.cssSelector(IncommingOutgoingConstants.BUTTON_LOGIN));
+@@ -128,44 +136,66 @@
+ 
+ 	}
+ 
+-	public static void logout() {
+-		timeOut.until(ExpectedConditions.visibilityOfElementLocated(By
+-				.cssSelector(IncommingOutgoingConstants.BUTTON_LOGOUT)));
+-		webElement = driver.findElement(By
+-				.cssSelector(IncommingOutgoingConstants.BUTTON_LOGOUT));
+-		webElement.click();
++	public static boolean logout() {
++		try {
++			timeOut.until(ExpectedConditions.visibilityOfElementLocated(By
++					.cssSelector(IncommingOutgoingConstants.BUTTON_LOGOUT)));
++			webElement = driver.findElement(By
++					.cssSelector(IncommingOutgoingConstants.BUTTON_LOGOUT));
++			webElement.click();
++		} catch (org.openqa.selenium.NoSuchElementException e) {
++			return false;
++		} catch (TimeoutException e) {
++			return false;
++		}
++		return true;
+ 	}
+ 
+ 	public static WebElement setDropDown(String elements) {
+ 		Random choice = new Random();
+-		List<WebElement> variable = new ArrayList<WebElement>();
+ 		variable = driver.findElements(By.cssSelector(elements));
+ 		int number = choice.nextInt(variable.size());
+ 		return variable.get(number);
+ 	}
+ 
++	public static boolean isRegisteredSuccessful() {
++		if (driver.getCurrentUrl()
++				.equals(IncommingOutgoingConstants.SIGNUP_URL)) {
++			return true;
++		} else {
++			return false;
++		}
++	}
++
++	public static void closingBrowser() {
++		driver.close();
++	}
++
+ 	public static void main(String[] args) {
+ 
+-		String email = IncommingOutgoingConstants.emailBuilder();
++		StringBuilder email = IncommingOutgoingConstants.emailBuilder();
++		String password = IncommingOutgoingConstants.passwordBuilder(email);
+ 
+-		try {
+-			driver = new RemoteWebDriver(new URL(
+-					IncommingOutgoingConstants.REMOTE_URL),
+-					DesiredCapabilities.firefox());
+-		} catch (MalformedURLException e) {
+-			e.printStackTrace();
+-		}
++		// try {
++		// driver = new RemoteWebDriver(new URL(
++		// IncommingOutgoingConstants.REMOTE_URL),
++		// DesiredCapabilities.firefox());
++		// } catch (MalformedURLException e) {
++		// e.printStackTrace();
++		// }
+ 
+-		timeOut = new WebDriverWait(driver, 10);
+-		register(email);
++		// timeOut = new WebDriverWait(driver, 10);
++		register(email.toString(), password);
++
+ 		System.out.println("register");
+ 		logout();
+ 		System.out.println("log out");
+-		login(email);
++		login(email.toString(), password);
++
+ 		System.out.println("log in");
+ 		logout();
+ 		System.out.println("log out");
+-		driver.close();
++		closingBrowser();
+ 		System.out.println("Browser closed");
+ 	}
+ }

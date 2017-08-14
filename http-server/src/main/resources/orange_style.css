@@ -1,0 +1,70 @@
+body{
+	background-image:url('http://soapsuppliers.co.uk/product_images/l/899/Orange_Essential_Oil__81724.jpg');
+	text-align:center;
+}
+#nosuccess
+{
+font-size:25px;
+font-family:"Times New Roman",Times,serif;
+}
+
+h1{
+	text-align:center;
+	font-size: 200%;
+}
+form{
+	text-align:center;
+	display:inline - block;
+	width: 100%;
+	margin-top:10%;
+	margin-bottom:10%;
+	margin-right:5%;
+	margin-left:5%;
+}
+span{
+	font-size: 150%;
+	margin-right:3%;
+}
+textarea{
+	resize: none;
+	width: 40%;
+	margin-top:10%;
+	margin-bottom:10%;
+	margin-right:5%;
+	margin-left:5%;
+	display:inline - block;
+	vertical-align: middle;
+	background: rgba(255,255,255,0.8);
+}
+input.buttons{
+	color: #220066;
+	font-family:"Times New Roman",Times,serif;
+	font-weight:bold;
+	border-radius:30px;
+	padding-top:2%;
+	padding-bottom:2%;
+	padding-right:2%;
+	padding-left:2%;
+	margin-top:10%;
+	margin-bottom:10%;
+	margin-right:5%;
+	margin-left:5%;
+	width: auto;
+	vertical-align: middle;
+	background: rgba(200,200,200,0.7);
+	display:inline - block;				
+}
+input.form1{
+	padding-top:2%;
+	padding-bottom:2%;
+	padding-right:2%;
+	padding-left:2%;
+	margin-top:2%;
+	margin-bottom:2%;
+	margin-left:3%;
+	display:inline - block;
+	background: rgba(255,255,255,0.9);
+}
+
+
+

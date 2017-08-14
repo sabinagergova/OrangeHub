@@ -1,0 +1,40 @@
+{
+	"type":"object",
+	"$schema": "http://json-schema.org/draft-03/schema",
+	"id": "http://jsonschema.net",
+	"required":true,
+	"properties":{
+		"address": {
+			"type":"object",
+			"id": "http://jsonschema.net/address",
+			"required":true,
+			"properties":{
+				"city": {
+					"type":"string",
+					"id": "http://jsonschema.net/address/city",
+					"required":true
+				},
+				"country": {
+					"type":"string",
+					"id": "http://jsonschema.net/address/country",
+					"required":true
+				},
+				"zipCode": {
+					"type":"integer",
+					"id": "http://jsonschema.net/address/zipCode",
+					"required":true
+				}
+			}
+		},
+		"firstName": {
+			"type":"string",
+			"id": "http://jsonschema.net/firstName",
+			"required":true
+		},
+		"lastName": {
+			"type":"string",
+			"id": "http://jsonschema.net/lastName",
+			"required":true
+		}
+	}
+}

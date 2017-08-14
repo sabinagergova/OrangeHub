@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!--homepage.html-->
+<html>
+	<head>
+		<title>Orange Hub/Home page</title>
+		<link rel="stylesheet" type="text/css" href="orange_style.css">
+	</head>
+	<body>
+		<h1> Welcome to the Orange Hub!</h1>
+		<p id="nosuccess">Unsuccessful login attempt</p>
+		<form action="http://localhost:5661/login" method="post" >
+				<span class = "form1">User name:</span>
+				<input type="text" name="username" required class = "form1" autocomplete='off'><br>
+				<span class = "form2">Password:</span>
+				<input type="password" name="password" required class = "form1"><br>
+				<input type="submit" value="Log in" class ="buttons">
+				<input type="submit" formaction="http://localhost:5661/register" value="Register" class ="buttons" >
+			</form>
+		
+	</body>
+</html>

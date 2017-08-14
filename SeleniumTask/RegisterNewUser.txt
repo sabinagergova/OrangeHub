@@ -1,0 +1,10 @@
+!contents
+!define TEST_SYSTEM {slim}
+
+|import                     |
+|com.skrill.interns.selenium|
+
+!|fitnesse coordinator                                                              |
+|email                            |password                         |register user?|
+|adichev.2fitnesset234est@sun-fish.com|selenium123fitnesse              |true          |
+|adichev.2fitnesset234est@sun-fish.com|adichev.fitnessetest@sun-fish.com|false         |

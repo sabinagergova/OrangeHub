@@ -1,0 +1,21 @@
+!define TEST_SYSTEM {slim}
+!path C:\Users\hristodimitrov\workspace\MatrixProject\team-orange\HristoSeleniumTask\target\classes
+
+|import                      |
+|com.skrill.platform.selenium|
+
+
+|random values generator|
+|generate email?        |
+|$EMAIL=                |
+
+|random values generator|
+|generate password?     |
+|$PASS=                 |
+
+|script   |registration process  |
+|register;|$EMAIL|$PASS          |
+|logout;                         |
+|reject   |login;|$EMAIL|portokal|
+|ensure   |login;|$EMAIL|$PASS   |
+|logout;                         |
